@@ -26,3 +26,6 @@ Thumbs.db
 # Project specific
 watch_dir/
 data/
+
+# Per-host overrides
+docker-compose.override.yml
