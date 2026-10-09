@@ -9,11 +9,11 @@ services:
     ports:
       # RTSP port — Frigate connects to rtsp://this-host:8654/camera
       # (8554 is avoided — Frigate uses it for its own restreaming)
-      - "127.0.0.1:8654:8554"
+      - "8654:8554"
       # RTMP (optional, useful for debugging with VLC etc.)
-      - "127.0.0.1:1945:1935"
+      - "1945:1935"
       # WebRTC / HLS (optional)
-      - "127.0.0.1:8889:8888"
+      - "8889:8888"
     restart: unless-stopped
 
   # ------------------------------------------------------------------
